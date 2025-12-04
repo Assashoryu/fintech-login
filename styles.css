@@ -1,0 +1,27 @@
+/* Custom styles for FinTech login page */
+:root{
+  --primary: #0d6efd;
+  --muted: #6c757d;
+  --card-radius: 12px;
+}
+
+body { font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
+
+.login-card{
+  max-width: 900px;
+  border-radius: var(--card-radius);
+  overflow: hidden;
+}
+
+.login-illustration{
+  background: linear-gradient(135deg, rgba(13,110,253,0.08), rgba(13,110,253,0.02));
+  min-height: 260px;
+}
+
+.login-illustration h2{ color: var(--primary); font-size: 28px; }
+
+.muted{ color: var(--muted); }
+
+@media (max-width: 767px){
+  .login-card{ margin: 0 12px; }
+}
